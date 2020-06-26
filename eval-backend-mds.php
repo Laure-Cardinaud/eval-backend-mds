@@ -3,6 +3,8 @@
 <!-- ouverture de mon formulaire -->
 <form action="/ma-page-de-traitement" method="get">
 
+<!-- entrée des champs -->
+
     <div>
         <label for="name">Nom :</label>
         <input type="text" id="name" name="user_name">
@@ -24,6 +26,8 @@
         <input type="email" id="mail" name="user_mail">
     </div>
 
+    <!-- création de l'input pour valider -->
+
     <input type="submit" name="valider" value="OK"/>
 
 </form>
@@ -31,7 +35,7 @@
 </html>
 
 
-<!-- affichage des données récupérées avec echo -->
+<!-- affichage des données récupérées avec echo (ça ne marche pas...) -->
 <?php
 echo "Nom: ".$_GET["user_name"]."<br />";
 echo "Ville: ".$_GET["user_town"]."<br />";
